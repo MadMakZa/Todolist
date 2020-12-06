@@ -20,6 +20,8 @@ import com.example.todolist.R;
 import com.example.todolist.model.Note;
 import com.example.todolist.screens.details.NoteDetailsActivity;
 
+import java.util.List;
+
 public class Adapter extends RecyclerView.Adapter<Adapter.NoteViewHolder> {
 
     //для работы анимаций
@@ -89,6 +91,10 @@ public class Adapter extends RecyclerView.Adapter<Adapter.NoteViewHolder> {
     @Override
     public int getItemCount() {
         return sortedList.size();
+    }
+    //сортед лист сравнит содержимое с новым содержимым
+    public void setItems(List<Note> notes){
+        sortedList.replaceAll(notes);
     }
 
     //класс котроый хранит ссылки на вьюхи

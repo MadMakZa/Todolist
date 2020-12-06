@@ -5,5 +5,6 @@
     <string name="note_text">Введите текст заметки</string>
     <string name="note_details_title">Заметка</string>
     <string name="save">Сохранить</string>
+    <string name="complited">Выполнено</string>
 
 </resources>

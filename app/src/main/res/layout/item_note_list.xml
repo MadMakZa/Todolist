@@ -7,15 +7,15 @@
     android:paddingLeft="16dp"
     android:paddingRight="16dp"
     android:gravity="center">
-    
+
     <TextView
         android:id="@+id/note_text"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
         android:layout_weight="1"
         android:minHeight="64dp"
-        android:layout_gravity="center_vertical"
-        tools:text="some text for testing"/>
+        tools:text="some text for testing" />
     <CheckBox
         android:id="@+id/complited"
         android:layout_width="wrap_content"
